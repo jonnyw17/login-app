@@ -1,9 +1,9 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
 
 // Get Homepage;
 
-router.get('/', ensureAuthenticated, function(req, res) {
+router.get('/', ensureAuthenticated, (req, res) => {
   res.render('index');
 })
 
